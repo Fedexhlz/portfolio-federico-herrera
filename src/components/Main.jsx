@@ -9,15 +9,12 @@ const Main = (props) => {
 
   return (
     <div>
-      <Card
-        className='mx-auto py-3 px-4 '
-        style={{ width: '22rem' }}
-      >
+      <Card className='mx-auto py-3 px-4 ' style={{ width: '26rem' }}>
         <Card.Img variant='top' src={imagen} />
         <Card.Body>
           <Card.Text style={{ textAlign: 'justify' }}>
-            HOLA, me llamo {nombre} y soy alumno de 2do año de la carrera "
-            {carrera}" de la {universidad} y sí, soy compañero de {amigo}
+            HOLA, me llamo {nombre} y soy alumno de 2do año de la carrera{' '}
+            <i>{carrera}</i> de la <i>{universidad}</i> y sí, soy compañero de {amigo}
           </Card.Text>
 
           <ListGroup variant='flush'>
@@ -25,7 +22,10 @@ const Main = (props) => {
               Lenguajes:
             </ListGroup.Item>
             {lenguajes.map((lenguaje, i) => (
-              <ListGroup.Item className='px-0  border-dark border-end-0' key={i}>
+              <ListGroup.Item
+                className='px-0  border-dark border-end-0'
+                key={i}
+              >
                 {lenguaje}
               </ListGroup.Item>
             ))}
