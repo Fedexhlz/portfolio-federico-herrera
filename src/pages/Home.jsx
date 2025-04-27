@@ -8,7 +8,7 @@ const Home = () => {
     nombre: 'Federico',
     apellido: 'Herrera',
     edad: 38,
-    lenguajes: ['Javascript', 'C#', 'Java'],
+    lenguajes: ['Español', 'Ingles', 'Javascript', 'C#', 'Java'],
     carrera: 'Tecnicatura Universitaria en Programación',
     universidad:
       'Universidad Tecnológica Nacional - Factultad Regional Tucumán',
