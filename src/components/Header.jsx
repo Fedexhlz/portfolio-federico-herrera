@@ -1,11 +1,13 @@
 import React from 'react';
 
-const Header = () => {
-  let alumno = 'Federico Herrera';
+const Header = (props) => {
+  const { nombre, apellido } = props.alumno;
 
   return (
     <div>
-      <h1>Portfolio {alumno}</h1>
+      <h1>
+        Portfolio {nombre} {apellido}
+      </h1>
       <hr />
     </div>
   );

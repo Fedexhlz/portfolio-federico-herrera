@@ -1,19 +1,15 @@
 import React from 'react';
-import "../css/Main.css"
+import '../css/Main.css';
 
-const Main = () => {
-  let alumno = 'Fd';
-  let alumnoSum = 'Sumerinde';
-  let alumnoCal = 'Calcagni';
+const Main = (props) => {
+  const { nombre, universidad, carrera, amigo } = props.alumno;
 
   return (
     <div>
-      <h3>
-        HOLA, me llamo {alumno} y soy alumno de 2do año de la carrera
-        "Tecnicatura Universitaria en Programación" de la Universidad
-        Tecnológica Nacional - Factultad Regional Tucumán y sí, soy compañero de{' '}
-        {alumnoSum} y de {alumnoCal}
-      </h3>
+      <p>
+        HOLA, me llamo {nombre} y soy alumno de 2do año de la carrera "{carrera}
+        " de la {universidad} y sí, soy compañero de {amigo}
+      </p>
       <ul>
         <li>Lenguajes:</li>
         <li>Español</li>
