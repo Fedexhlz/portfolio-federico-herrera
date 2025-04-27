@@ -13,13 +13,14 @@ const Home = () => {
     universidad:
       'Universidad Tecnológica Nacional - Factultad Regional Tucumán',
     amigo: 'Sumerinde',
+    redes:["https://www.linkedin.com/in/federico-herrera-a50591237/","https://github.com/Fedexhlz"]
   };
 
   return (
     <div>
       <Header alumno={alumno} />
       <Main alumno={alumno} />
-      <Footer />
+      <Footer redes={alumno.redes}/>
     </div>
   );
 };
